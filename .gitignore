@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build output
+/Frontend/admin-panel/build/
+/Frontend/admin-panel/coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+
+# JSON Server database
+/server/db.json
+
+# OS specific files
+.DS_Store
+Thumbs.db
