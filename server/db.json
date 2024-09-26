@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "user",
+      "createdAt": "2024-09-20T14:30:00Z",
+      "updatedAt": "2024-09-20T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "admin",
+      "createdAt": "2024-09-15T09:45:00Z",
+      "updatedAt": "2024-09-16T11:20:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob.johnson@example.com",
+      "role": "user",
+      "createdAt": "2024-09-10T11:20:00Z",
+      "updatedAt": "2024-09-10T11:20:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Alice Brown",
+      "email": "alice.brown@example.com",
+      "role": "user",
+      "createdAt": "2024-09-05T16:55:00Z",
+      "updatedAt": "2024-09-07T10:15:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Charlie Wilson",
+      "email": "charlie.wilson@example.com",
+      "role": "user",
+      "createdAt": "2024-08-28T13:10:00Z",
+      "updatedAt": "2024-08-28T13:10:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Eva Martinez",
+      "email": "eva.martinez@example.com",
+      "role": "user",
+      "createdAt": "2024-09-21T10:05:00Z",
+      "updatedAt": "2024-09-21T10:05:00Z"
+    },
+    {
+      "id": 7,
+      "name": "David Lee",
+      "email": "david.lee@example.com",
+      "role": "user",
+      "createdAt": "2024-09-19T08:40:00Z",
+      "updatedAt": "2024-09-20T14:25:00Z"
+    },
+    {
+      "id": 8,
+      "name": "Grace Taylor",
+      "email": "grace.taylor@example.com",
+      "role": "user",
+      "createdAt": "2024-09-18T15:25:00Z",
+      "updatedAt": "2024-09-18T15:25:00Z"
+    },
+    {
+      "id": 9,
+      "name": "Frank Anderson",
+      "email": "frank.anderson@example.com",
+      "role": "user",
+      "createdAt": "2024-09-07T12:50:00Z",
+      "updatedAt": "2024-09-07T12:50:00Z"
+    },
+    {
+      "id": 10,
+      "name": "Helen Garcia",
+      "email": "helen.garcia@example.com",
+      "role": "user",
+      "createdAt": "2024-08-25T17:35:00Z",
+      "updatedAt": "2024-09-01T09:30:00Z"
+    }
+  ]
+}
