@@ -28,7 +28,8 @@ Getting Started
 Prerequisites
 Ensure you have the following installed:
 
-![Screenshot 2024-09-27 210606](https://github.com/user-attachments/assets/ae75a634-6cef-4327-9878-8bce879a3cb1)
+
+![Screenshot 2024-09-27 215406](https://github.com/user-attachments/assets/fa97d3b9-59f1-429e-b6da-a66039e4dfb2)
 
 NPM (Node Package Manager)
 JSON Server (Install globally using npm install -g json-server)
