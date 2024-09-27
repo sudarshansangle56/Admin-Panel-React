@@ -91,6 +91,12 @@
       "name": "Sudarshan",
       "email": "SudarshanSangle@gmail.com",
       "role": "User"
+    },
+    {
+      "id": "a32e",
+      "name": "Onkar unde",
+      "email": "onakr@gamil.com",
+      "role": "admin"
     }
   ]
 }

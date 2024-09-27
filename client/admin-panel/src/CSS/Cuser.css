@@ -1,0 +1,56 @@
+.create-user-container {
+    background-color: white;
+    border: 1px solid #3C8884;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #0d6EFD;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #3C8884;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3C8884;
+    border-radius: 4px;
+  }
+  
+  .create-button {
+    background-color: #0d6EFD;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-button:hover {
+    background-color: #0b5ed7; /* Darker shade of blue */
+  }
+  
+  .back-button {
+    background-color: transparent;
+    color: #0d6EFD;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  
+  .back-button:hover {
+    color: #3C8884; /* Change color on hover */
+  }
+  

@@ -1,20 +1,22 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-
+import React, { useState } from "react";
+import axios from "axios";
+import Sidebar from "./Sidebar";
 const UpdateUser = ({ onUserUpdated }) => {
-  const [searchName, setSearchName] = useState('');
+  const [searchName, setSearchName] = useState("");
   const [userId, setUserId] = useState(null);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [role, setRole] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [role, setRole] = useState("");
   const [isUserFound, setIsUserFound] = useState(false);
 
   const searchUser = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/users');
+      const response = await axios.get("http://localhost:3000/users");
       const users = response.data;
-      const user = users.find(u => u.name.toLowerCase() === searchName.toLowerCase());
-      
+      const user = users.find(
+        (u) => u.name.toLowerCase() === searchName.toLowerCase()
+      );
+
       if (user) {
         setUserId(user.id);
         setName(user.name);
@@ -22,11 +24,11 @@ const UpdateUser = ({ onUserUpdated }) => {
         setRole(user.role);
         setIsUserFound(true);
       } else {
-        alert('User not found');
+        alert("User not found");
         setIsUserFound(false);
       }
     } catch (error) {
-      console.error('Error searching for user:', error);
+      console.error("Error searching for user:", error);
     }
   };
 
@@ -37,15 +39,19 @@ const UpdateUser = ({ onUserUpdated }) => {
     try {
       await axios.put(`http://localhost:3000/users/${userId}`, updatedUser);
       onUserUpdated();
-      alert('User updated successfully');
+      alert("User updated successfully");
     } catch (error) {
-      console.error('Error updating user:', error);
+      console.error("Error updating user:", error);
     }
   };
 
   return (
-    <div>
-      <h2>Update User</h2>
+    <div className="ok" style={{ display: "flex" }}>
+      <div>
+        <Sidebar />
+      </div>
+     <div>
+     <h2>Update User</h2>
       <div>
         <label>Search User by Name:</label>
         <input
@@ -55,7 +61,9 @@ const UpdateUser = ({ onUserUpdated }) => {
           placeholder="Enter user name"
           required
         />
-        <button type="button" onClick={searchUser}>Search</button>
+        <button type="button" onClick={searchUser}>
+          Search
+        </button>
       </div>
       {isUserFound && (
         <form onSubmit={handleSubmit}>
@@ -89,6 +97,7 @@ const UpdateUser = ({ onUserUpdated }) => {
           <button type="submit">Update</button>
         </form>
       )}
+     </div>
     </div>
   );
 };

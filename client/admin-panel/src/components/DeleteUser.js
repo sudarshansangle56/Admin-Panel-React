@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import Sidebar from './Sidebar';
 const DeleteUser = ({ onUserDeleted }) => {
   const [name, setName] = useState('');
 
@@ -27,8 +27,12 @@ const DeleteUser = ({ onUserDeleted }) => {
   };
 
   return (
+    <div className='ok' style={{display:'flex'}}>
     <div>
-      <h2>Delete User</h2>
+        <Sidebar/>
+    </div>
+    <div>
+    <h2>Delete User</h2>
       <input
         type="text"
         placeholder="Enter user name"
@@ -37,6 +41,8 @@ const DeleteUser = ({ onUserDeleted }) => {
         required
       />
       <button onClick={handleDelete}>Delete User</button>
+    </div>
+      
     </div>
   );
 };
