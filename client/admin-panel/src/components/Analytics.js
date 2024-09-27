@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-
+import '../CSS/Graph.css'
 // Register Chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -47,23 +47,38 @@ const Analytics = () => {
     datasets: [{
       label: 'User Registrations',
       data: [metrics.last24Hours, metrics.last7Days, metrics.last15Days, metrics.last30Days],
-      backgroundColor: 'rgba(75,192,192,1)',
+      backgroundColor:'#3C8884',
       borderColor: 'rgba(0,0,0,1)',
-      borderWidth: 2,
+      borderWidth: 1,
+      barThickness: 50,
     }],
   };
 
   return (
-    <div>
-      <h2>User Registration Metrics</h2>
-      <div>
-        <p>Last 24 hours: {metrics.last24Hours}</p>
-        <p>Last 7 days: {metrics.last7Days}</p>
-        <p>Last 15 days: {metrics.last15Days}</p>
-        <p>Last 30 days: {metrics.last30Days}</p>
+    <div className="grp">
+ <div>
+    <h2>User Registration Metrics</h2>
+    <div className="Mbox">
+
+      <div className="box">
+      <p>Last 24 hours: {metrics.last24Hours}</p>
       </div>
+      <div className="box"  style={{backgroundColor:'#3C8884'}}>
+      <p>Last 7 days: {metrics.last7Days}</p>
+      </div>
+      <div className="box">
+      <p>Last 15 days: {metrics.last15Days}</p>
+      </div>
+      <div className="box" style={{backgroundColor:'#3C8884'}}>
+      <p>Last 30 days: {metrics.last30Days}</p>
+      </div>
+    </div>
+    <div className="chart-container">
       <Bar data={chartData} />
     </div>
+  </div>
+    </div>
+   
   );
 };
 

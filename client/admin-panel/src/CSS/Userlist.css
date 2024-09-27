@@ -1,0 +1,50 @@
+/* For the container */
+
+  
+  /* For the search input */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* For the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Table headers */
+  table thead th {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  /* Table rows */
+  table tbody tr {
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  /* Table data cells */
+  table tbody td {
+    padding: 10px;
+  }
+  
+  /* Add some hover effect for the rows */
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Make sure the loading message is centered */
+  div.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  

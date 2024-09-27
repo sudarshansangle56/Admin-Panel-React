@@ -1,0 +1,57 @@
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+.grp{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5vh;
+}
+
+.Mbox{
+    display: flex;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #0d6EFD;
+    color: white;
+    margin-left: 1vh;
+}
+  /* Metrics section */
+  div p {
+    font-size: 22px;
+    color: white;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Chart container */
+  .chart-container {
+    margin-top: 20px;
+    
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    div {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    div p {
+      font-size: 16px;
+    }
+  }
+  
