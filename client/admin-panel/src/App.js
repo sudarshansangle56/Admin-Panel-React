@@ -1,10 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-// import UserList from './components/UserList';
-// import Analytics from './components/Analytics';
-// import UserForm from './components/UserForm'
-// import Sidebar from './components/Sidebar';
-// import Firstpage from './pages/Firstpage';
+import React from 'react';
 import UpdateUser from './components/UpdateUser';
 import CreateUser from './components/CreateUser';
 import DeleteUser from './components/DeleteUser';
@@ -16,7 +10,7 @@ function App() {
  
   const handleUserDeleted = () => {
     alert('User deleted successfully!');
-    // Refresh the user list after deletion
+  
   };
   return (
     <div className="App">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Sidebar from "./Sidebar";
+import Navbar from './Navbar';
 const UpdateUser = ({ onUserUpdated }) => {
   const [searchName, setSearchName] = useState("");
   const [userId, setUserId] = useState(null);
@@ -46,10 +47,12 @@ const UpdateUser = ({ onUserUpdated }) => {
   };
 
   return (
-    <div className="ok" style={{ display: "flex" }}>
+    
       <div>
+        <Navbar/>
+        <div className="ok" style={{  display:'flex',flexWrap: 'wrap', padding: '10px', }}>
         <Sidebar />
-      </div>
+      
      <div>
      <h2>Update User</h2>
       <div>
@@ -97,6 +100,7 @@ const UpdateUser = ({ onUserUpdated }) => {
           <button type="submit">Update</button>
         </form>
       )}
+     </div>
      </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../CSS/Cuser.css'
 import Sidebar from './Sidebar';
+import Navbar from './Navbar';
 const CreateUser = ({ onUserCreated }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -20,7 +21,10 @@ const CreateUser = ({ onUserCreated }) => {
   };
 
   return (
-    <div className='ok' style={{display:'flex'}}>
+    <div>
+
+   <Navbar/>
+    <div className='ok' style={{ display:'flex',flexWrap: 'wrap', padding: '10px',}}>
         <div> <Sidebar/></div>
        
         <div><h2>Create New User</h2>
@@ -40,6 +44,7 @@ const CreateUser = ({ onUserCreated }) => {
         <button type="submit">Create</button>
       </form></div>
       
+    </div>
     </div>
   );
 };

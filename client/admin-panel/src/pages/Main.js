@@ -3,12 +3,12 @@ import Firstpage from './Firstpage'
 import Sidebar from '../components/Sidebar'
 import UserList from '../components/UserList'
 import Analytics from '../components/Analytics'
-import UserForm from '../components/UserForm'
+
 function Main() {
   return (
     <div>
       <Firstpage/>
-      <div className="ok" style={{  display:'flex' }}>
+      <div className="ok" style={{  display:'flex',flexWrap: 'wrap',justifyContent: 'space-between', padding: '10px', }}>
       <Sidebar/>
       <UserList />
       <Analytics />

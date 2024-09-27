@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import {Link} from 'react-router-dom'
 const Sidebar = () => {
   return (
@@ -15,7 +15,9 @@ const Sidebar = () => {
           <a href="#" className="nav-link active" aria-current="page">
             {/* Home Icon */}
             <i className="bi bi-house-door me-2"></i>
+            <Link className='ok' style={{color:'white', textDecoration:'none'}} to="/">
             Home
+            </Link>
           </a>
         </li>
         <li>
